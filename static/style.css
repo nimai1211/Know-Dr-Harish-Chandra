@@ -2546,3 +2546,14 @@ body:not(.dark-mode) .tribute h4 {
     color: #222222;
     opacity: 1;
 }
+
+/* Fix Tribute text readability in light mode */
+body:not(.dark-mode) #tribute,
+body:not(.dark-mode) #tribute p,
+body:not(.dark-mode) #tribute h2,
+body:not(.dark-mode) #tribute h3,
+body:not(.dark-mode) #tribute h4,
+body:not(.dark-mode) #tribute span {
+    color: #222222;
+    opacity: 1;
+}
