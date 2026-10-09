@@ -1,1 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+          content="Explore the life, education, research and legacy of mathematician Harish-Chandra.">
+
+    <title>Know Dr. Harish-Chandra</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body>
+
+    <!-- Hero / Header -->
+    
+<header class="hero" id="home">
+    
+<div class="anniversary-banner">
+    <span class="anniversary-star">✦</span>
+
+    <div class="anniversary-content">
+        <p class="anniversary-date">11 OCTOBER · BIRTH ANNIVERSARY</p>
+        <h2>Remembering Dr. Harish-Chandra</h2>
+        <p>
+            Honouring a mathematical genius whose ideas continue
+            to inspire generations.
+        </p>
+    </div>
+
+    <span class="anniversary-star">✦</span>
+</div>
+    <div class="theme-container">
+        <button type="button" id="themeToggle" class="theme-button">
+            🌙 Dark Mode
+        </button>
+    </div>
+
+    <div class="hero-content">
+        <p class="hero-eyebrow">
+            SCHOOL OF BASIC SCIENCES · CSJMU
+        </p>
+
+        <div class="hero-gold-line"></div>
+
+       <p class="institution">
+    A Tribute to Dr. Harish-Chandra
+</p>
+
+<p class="institution-subtitle">
+    An Educational Project · School of Basic Sciences, CSJMU, Kanpur
+</p>
+
+        <p class="institution-location">
+    Chhatrapati Shahu Ji Maharaj University, Kanpur
+</p>
+
+        <h1>Know Dr. Harish-Chandra</h1>
+
+        <p class="hero-description">
+            Discover the life, mathematical brilliance, pioneering
+            research, and enduring legacy of an extraordinary
+            twentieth-century mathematician.
+        </p>
+
+        <a class="primary-button" href="#introduction">
+            Explore His Life <span aria-hidden="true">→</span>
+        </a>
+
+        <p class="hero-note">
+            A journey through mathematics, knowledge and legacy
+        </p>
+    </div>
+</header>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation">
+<nav class="navbar" aria-label="Main navigation">
+    <a href="#introduction">Introduction</a>
+    <a href="#timeline">Life Timeline</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#legacy">Legacy</a>
+    <a href="#facts">Interesting Facts</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#tribute">Tribute</a>
+    <a href="#references">References</a>
+</nav>
+        
+    </nav>
+
+    <main class="page-container">
+
+        <!-- Search -->
+        <section class="search-section" aria-label="Search website">
+            <h2>Explore the Website</h2>
+
+            <p>Search for topics such as education, research, awards or legacy.</p>
+
+            <form id="searchForm" class="search-container">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search biography, research, awards..."
+                    aria-label="Search website content"
+                >
+
+                <button type="submit" class="button button-primary">
+                    Search
+                </button>
+
+                <button type="button" id="clearButton" class="button button-secondary">
+                    Clear
+                </button>
+            </form>
+
+            <p id="searchMessage" class="status-message" role="status"
+               aria-live="polite"></p>
+        </section>
+
+        <!-- Print and Share -->
+        <div class="action-container">
+            <button type="button" id="printButton" class="button button-primary">
+                🖨️ Print / Save as PDF
+            </button>
+
+            <button type="button" id="shareButton" class="button button-secondary">
+                🔗 Share Website
+            </button>
+
+            <p id="shareMessage" class="status-message" role="status"
+               aria-live="polite"></p>
+        </div>
+
+        <!-- Introduction -->
+        <section id="introduction" class="content-section">
+            <div class="section-heading">
+                <span class="section-label">Introduction</span>
+                
+<p class="section-eyebrow">THE MATHEMATICIAN</p>
+<h2>Meet Dr. Harish-Chandra</h2>
+<p class="section-lead">
+    A remarkable journey of intellect, perseverance and
+    groundbreaking contributions to mathematics.
+</p>
+            </div>
+
+            <div class="profile-layout">
+                <div class="profile-image-wrapper">
+                    <img
+                        src="{{ url_for('static', filename='images/harishchandra.jpg') }}"
+                        alt="Portrait of mathematician Harish-Chandra"
+                        class="profile-image"
+                        onerror="this.style.display='none'; document.getElementById('imageFallback').hidden=false;"
+                    >
+
+                    <div id="imageFallback" class="image-fallback" hidden>
+                        <span>HC</span>
+                        <p>Harish-Chandra</p>
+                        <small>Add his portrait to static/images/harishchandra.jpg</small>
+                    </div>
+                </div>
+
+                <div class="profile-text">
+                    <h3>A Pioneer in Mathematics</h3>
+
+                    <p>
+                        Harish-Chandra (11 October 1923 – 16 October 1983)
+                        was an Indian-born mathematician who made fundamental
+                        contributions to representation theory, harmonic
+                        analysis and the theory of Lie groups.
+                    </p>
+
+                    <p>
+                        Born in Kanpur, India, he initially studied physics
+                        before pursuing advanced research in mathematics.
+                        His work transformed the study of representations
+                        of semisimple Lie groups and continues to influence
+                        modern mathematics.
+                    </p>
+
+                    <p>
+                        His scientific journey took him from India to
+                        Cambridge, Princeton and Columbia University, and
+                        ultimately to the Institute for Advanced Study
+                        in Princeton.
+                    </p>
+
+                    <div class="fact-strip">
+                        <div class="fact">
+                            <strong>1923</strong>
+                            <span>Born in Kanpur</span>
+                        </div>
+
+                        <div class="fact">
+                            <strong>Mathematics</strong>
+                            <span>Primary field</span>
+                        </div>
+
+                        <div class="fact">
+                            <strong>1983</strong>
+                            <span>Passed away in Princeton</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+<section id="timeline" class="content-section life-journey">
+    <div class="section-heading">
+        <span class="section-label">Life Journey</span>
+        <h2>Life Timeline</h2>
+        <p>
+            Important milestones in Harish-Chandra's life and career.
+            Select a milestone to read more.
+        </p>
+    </div>
+
+         <div class="timeline">
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1923</span>
+                    <div class="timeline-card">
+                        <h3>Birth in Kanpur</h3>
+                        <p>Harish-Chandra was born on 11 October 1923 in Kanpur, India.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                His early years in India formed the beginning
+                                of a journey that would later influence
+                                mathematics around the world.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">Early years</span>
+                    <div class="timeline-card">
+                        <h3>Schooling and Early Education</h3>
+                        <p>He developed a strong interest in science and mathematics.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                His academic abilities led him to pursue
+                                higher studies in physics before moving
+                                toward mathematical research.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1941</span>
+                    <div class="timeline-card">
+                        <h3>Bachelor's Degree</h3>
+                        <p>He completed his B.Sc. studies in India.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                His university education provided a
+                                foundation for his later work in theoretical
+                                physics and advanced mathematics.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1943</span>
+                    <div class="timeline-card">
+                        <h3>Master's Degree</h3>
+                        <p>He completed his M.Sc. in physics.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                His growing interest in theoretical questions
+                                encouraged him to continue research abroad.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1943–1945</span>
+                    <div class="timeline-card">
+                        <h3>Research in Bangalore</h3>
+                        <p>He worked at the Indian Institute of Science.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                During this period, he worked under the
+                                influence of leading scientific researchers
+                                and developed his interest in mathematical
+                                physics.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1945</span>
+                    <div class="timeline-card">
+                        <h3>Move to Cambridge</h3>
+                        <p>He went to the University of Cambridge for research.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                At Cambridge, he worked with the physicist
+                                Paul Dirac and increasingly focused on
+                                mathematical problems.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1947</span>
+                    <div class="timeline-card">
+                        <h3>Ph.D. in Mathematics</h3>
+                        <p>He received his doctorate from Cambridge.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                His doctoral research helped establish the
+                                mathematical direction that would define
+                                much of his later career.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1947–1949</span>
+                    <div class="timeline-card">
+                        <h3>Princeton Research</h3>
+                        <p>He continued his research in the United States.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                Princeton became an important setting for
+                                his developing work in representation
+                                theory and related areas.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1950–1963</span>
+                    <div class="timeline-card">
+                        <h3>Columbia University</h3>
+                        <p>He held an academic position at Columbia University.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                His research on Lie groups and their
+                                representations became increasingly
+                                influential in the mathematical community.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1954</span>
+                    <div class="timeline-card">
+                        <h3>Cole Prize</h3>
+                        <p>He received the American Mathematical Society's Cole Prize in Algebra.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                The prize recognized important contributions
+                                to algebra, including his influential work
+                                on representations of semisimple Lie groups.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1963</span>
+                    <div class="timeline-card">
+                        <h3>Institute for Advanced Study</h3>
+                        <p>He joined the Institute for Advanced Study in Princeton.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                He spent the remainder of his career at
+                                the Institute, developing ideas that shaped
+                                modern representation theory.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1968</span>
+                    <div class="timeline-card">
+                        <h3>IBM von Neumann Professorship</h3>
+                        <p>He was appointed IBM von Neumann Professor at the Institute.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                This appointment recognized his standing
+                                as a leading mathematical researcher.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1973</span>
+                    <div class="timeline-card">
+                        <h3>Fellow of the Royal Society</h3>
+                        <p>He was elected a Fellow of the Royal Society.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                The election reflected international
+                                recognition of his scientific achievements.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1974</span>
+                    <div class="timeline-card">
+                        <h3>Ramanujan Medal</h3>
+                        <p>He received the Ramanujan Medal in recognition of his mathematics.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                The medal is associated with distinguished
+                                contributions to mathematical sciences.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1981</span>
+                    <div class="timeline-card">
+                        <h3>National Academy of Sciences</h3>
+                        <p>He was elected to the United States National Academy of Sciences.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                His work continued to be recognized for
+                                its depth and lasting influence.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-year">1983</span>
+                    <div class="timeline-card">
+                        <h3>Passing and Legacy</h3>
+                        <p>Harish-Chandra passed away in Princeton on 16 October 1983.</p>
+                        <button class="timeline-toggle" type="button"
+                                aria-expanded="false">
+                            Read more <span aria-hidden="true">＋</span>
+                        </button>
+                        <div class="timeline-details" hidden>
+                            <p>
+                                His mathematical ideas continue to be used
+                                and developed by researchers in representation
+                                theory, harmonic analysis and related fields.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="content-section">
+            <div class="section-heading">
+                <span class="section-label">Academic Journey</span>
+                <h2>Education</h2>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <span class="card-icon">🎓</span>
+                    <h3>Undergraduate Studies</h3>
+                    <p>
+                        He studied physics in India and completed his
+                        undergraduate education in 1941.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">📘</span>
+                    <h3>Master's Studies</h3>
+                    <p>
+                        He completed his master's degree in physics in 1943,
+                        before moving toward research abroad.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">🌍</span>
+                    <h3>Cambridge University</h3>
+                    <p>
+                        He pursued doctoral research at Cambridge and
+                        received his Ph.D. in 1947.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="research" class="content-section">
+            <div class="section-heading">
+                <span class="section-label">Scientific Work</span>
+                <h2>Research and Contributions</h2>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <span class="card-icon">∑</span>
+                    <h3>Representation Theory</h3>
+                    <p>
+                        His work on representations of semisimple Lie groups
+                        became a major foundation of modern representation theory.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">∫</span>
+                    <h3>Harmonic Analysis</h3>
+                    <p>
+                        He made important contributions to harmonic analysis
+                        on Lie groups and related mathematical structures.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">∞</span>
+                    <h3>Harish-Chandra's Work</h3>
+                    <p>
+                        Concepts such as the Harish-Chandra character and
+                        the Harish-Chandra homomorphism are important in
+                        advanced areas of mathematics.
+                    </p>
+                </article>
+            </div>
+
+            <div class="highlight-panel">
+                <h3>Why Is His Research Important?</h3>
+                <p>
+                    His ideas created powerful connections between algebra,
+                    analysis and geometry. They remain central to research
+                    on Lie groups and their representations.
+                </p>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section id="achievements" class="content-section">
+            <div class="section-heading">
+                <span class="section-label">Recognition</span>
+                <h2>Awards and Achievements</h2>
+            </div>
+
+            <div class="achievement-list">
+                <article class="achievement-card">
+                    <div class="achievement-year">1954</div>
+                    <div>
+                        <h3>Cole Prize in Algebra</h3>
+                        <p>
+                            Awarded by the American Mathematical Society
+                            for distinguished mathematical work.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="achievement-card">
+                    <div class="achievement-year">1973</div>
+                    <div>
+                        <h3>Fellow of the Royal Society</h3>
+                        <p>
+                            Elected to one of the world's most respected
+                            scientific societies.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="achievement-card">
+                    <div class="achievement-year">1974</div>
+                    <div>
+                        <h3>Ramanujan Medal</h3>
+                        <p>
+                            Recognized for his significant contributions
+                            to mathematics.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="achievement-card">
+                    <div class="achievement-year">1981</div>
+                    <div>
+                        <h3>National Academy of Sciences</h3>
+                        <p>
+                            Elected as a member of the United States
+                            National Academy of Sciences.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Legacy -->
+        <section id="legacy" class="content-section">
+            <div class="section-heading">
+                <span class="section-label">Lasting Impact</span>
+                <h2>His Legacy</h2>
+            </div>
+
+            <p>
+                Harish-Chandra's legacy is not limited to awards or
+                academic appointments. His mathematical methods and
+                theories continue to help researchers understand the
+                structure and representations of Lie groups.
+            </p>
+
+            <p>
+                He is remembered as a mathematician whose deep ideas
+                connected different areas of mathematics and opened
+                paths for generations of researchers.
+            </p>
+
+            <div class="legacy-quote">
+                <p>
+                    A lasting mathematical legacy is built through ideas
+                    that continue to inspire discovery.
+                </p>
+                <span>— In honour of Harish-Chandra</span>
+            </div>
+        </section>
+
+        ```html
+<!-- Interesting Facts -->
+<section id="facts" class="content-section hc-facts-section">
+    <div class="section-heading">
+        <span class="section-label">Did You Know?</span>
+        <h2>Interesting Facts About Harish-Chandra</h2>
+        <p class="section-lead">
+            Discover some fascinating details about his life and mathematical journey.
+        </p>
+    </div>
+
+    <div class="hc-facts-grid">
+
+        <article class="hc-fact-card">
+            <span class="hc-fact-number">01</span>
+            <div class="hc-fact-icon">📍</div>
+            <h3>Born in Kanpur</h3>
+            <p>
+                Harish-Chandra was born in Kanpur, India,
+                on 11 October 1923.
+            </p>
+        </article>
+
+        <article class="hc-fact-card">
+            <span class="hc-fact-number">02</span>
+            <div class="hc-fact-icon">🔬</div>
+            <h3>Started with Physics</h3>
+            <p>
+                He initially studied physics before becoming
+                one of the leading mathematicians of his time.
+            </p>
+        </article>
+
+        <article class="hc-fact-card">
+            <span class="hc-fact-number">03</span>
+            <div class="hc-fact-icon">🧮</div>
+            <h3>Mathematical Excellence</h3>
+            <p>
+                His work made major contributions to representation
+                theory and harmonic analysis.
+            </p>
+        </article>
+
+        <article class="hc-fact-card">
+            <span class="hc-fact-number">04</span>
+            <div class="hc-fact-icon">🌍</div>
+            <h3>International Career</h3>
+            <p>
+                His academic journey included Cambridge,
+                Columbia University and the Institute for Advanced Study.
+            </p>
+        </article>
+
+        <article class="hc-fact-card">
+            <span class="hc-fact-number">05</span>
+            <div class="hc-fact-icon">🏆</div>
+            <h3>International Recognition</h3>
+            <p>
+                He received the Cole Prize in Algebra in 1954
+                and was elected a Fellow of the Royal Society in 1973.
+            </p>
+        </article>
+
+        <article class="hc-fact-card">
+            <span class="hc-fact-number">06</span>
+            <div class="hc-fact-icon">💡</div>
+            <h3>A Lasting Legacy</h3>
+            <p>
+                Mathematical concepts bearing his name continue
+                to be studied by researchers around the world.
+            </p>
+        </article>
+
+    </div>
+</section>
+```
+
+        <section id="gallery" class="content-section hc-gallery-section">
+    <h2>Photo Gallery</h2>
+    <p class="hc-gallery-intro">
+        Glimpses into the life and legacy of Dr. Harish-Chandra.
+        Select a photo to view it in a larger size.
+    </p>
+
+    <div class="hc-gallery-grid">
+        <button class="hc-gallery-item" type="button"
+                data-full-image="{{ url_for('static', filename='images/harishchandra.jpg') }}"
+                aria-label="View Dr. Harish-Chandra photo">
+            <img src="{{ url_for('static', filename='images/harishchandra.jpg') }}"
+                 alt="Dr. Harish-Chandra" loading="lazy">
+            <span>Dr. Harish-Chandra</span>
+        </button>
+
+        <button class="hc-gallery-item" type="button"
+                data-full-image="{{ url_for('static', filename='images/harishchandra2.jpg') }}"
+                aria-label="View second photo">
+            <img src="{{ url_for('static', filename='images/harishchandra2.jpg') }}"
+                 alt="Dr. Harish-Chandra — photograph 2" loading="lazy">
+            <span>Life and Legacy</span>
+        </button>
+
+        <button class="hc-gallery-item" type="button"
+                data-full-image="{{ url_for('static', filename='images/harishchandra3.jpg') }}"
+                aria-label="View third photo">
+            <img src="{{ url_for('static', filename='images/harishchandra3.jpg') }}"
+                 alt="Dr. Harish-Chandra — photograph 3" loading="lazy">
+            <span>Remembering a Legend</span>
+        </button>
+    </div>
+</section>
+<div id="hcGalleryModal" class="hc-gallery-modal"
+     role="dialog" aria-modal="true" aria-label="Photo viewer"
+     aria-hidden="true">
+    <button type="button" id="hcGalleryClose"
+            class="hc-gallery-close" aria-label="Close photo viewer">
+        &times;
+    </button>
+    <img id="hcGalleryModalImage" src="" alt="Enlarged gallery photo">
+</div>
+        
+
+            <section id="quiz" class="content-section hc-quiz-section">
+    <h2>Test Your Knowledge</h2>
+    <p>Answer these questions about Dr. Harish-Chandra.</p>
+
+    <div id="hcQuiz">
+        <div class="hc-question" data-answer="b">
+            <h3>1. In which field was Dr. Harish-Chandra best known?</h3>
+            <label><input type="radio" name="q1" value="a"> Chemistry</label>
+            <label><input type="radio" name="q1" value="b"> Mathematics</label>
+            <label><input type="radio" name="q1" value="c"> Biology</label>
+            <label><input type="radio" name="q1" value="d"> Astronomy</label>
+        </div>
+
+        <div class="hc-question" data-answer="c">
+            <h3>2. In which year was he born?</h3>
+            <label><input type="radio" name="q2" value="a"> 1913</label>
+            <label><input type="radio" name="q2" value="b"> 1920</label>
+            <label><input type="radio" name="q2" value="c"> 1923</label>
+            <label><input type="radio" name="q2" value="d"> 1930</label>
+        </div>
+
+        <div class="hc-question" data-answer="a">
+            <h3>3. Which area is closely associated with his mathematical work?</h3>
+            <label><input type="radio" name="q3" value="a"> Representation theory</label>
+            <label><input type="radio" name="q3" value="b"> Botany</label>
+            <label><input type="radio" name="q3" value="c"> Geology</label>
+            <label><input type="radio" name="q3" value="d"> Medicine</label>
+        </div>
+
+        <button type="button" id="hcSubmitQuiz">Submit Answers</button>
+        <p id="hcQuizResult" role="status" aria-live="polite"></p>
+        <button type="button" id="hcRetryQuiz" hidden>Try Again</button>
+    </div>
+</section>
+
+
+
+
+
+
+        
+<!-- Birth Anniversary Tribute -->
+<section id="tribute" class="content-section tribute-section">
+    <div class="tribute-decoration">✦</div>
+
+    <p class="tribute-label">11 OCTOBER · BIRTH ANNIVERSARY</p>
+
+    <h2>A Tribute to Dr. Harish-Chandra</h2>
+
+    <div class="tribute-divider"></div>
+    <p class="tribute-dates">
+    11 October 1923 — 16 October 1983
+</p>
+
+    <p class="tribute-quote">
+        “A life dedicated to the pursuit of mathematical truth
+        becomes a legacy that inspires generations.”
+    </p>
+
+    <p class="tribute-message">
+        On the birth anniversary of <strong>Dr. Harish-Chandra</strong>,
+        we pay our heartfelt tribute to one of the most distinguished
+        mathematicians of the twentieth century. His profound work in
+        representation theory and harmonic analysis continues to influence
+        modern mathematics and inspire researchers around the world.
+    </p>
+
+    <p class="tribute-message">
+        His intellectual brilliance, dedication to research, and enduring
+        contributions remind us that the pursuit of knowledge has no boundaries.
+    </p>
+
+    <div class="tribute-signature">
+        <span class="tribute-star">✦</span>
+        <p>Remembering a Legend. Celebrating a Legacy.</p>
+        <span class="tribute-star">✦</span>
+    </div>
+</section>
+
+        <!-- References -->
+        <section id="references" class="content-section">
+            <div class="section-heading">
+                <span class="section-label">Further Reading</span>
+                <h2>References and Resources</h2>
+            </div>
+
+            <p>
+                Use the following resources to learn more and verify
+                biographical and mathematical details.
+            </p>
+
+            <div class="reference-cards">
+                <article class="reference-card">
+                    <span class="reference-icon">🏛️</span>
+                    <h3>Harish-Chandra Research Institute</h3>
+                    <p>
+                        Explore the institute named in honour of
+                        Harish-Chandra and its research activities.
+                    </p>
+                    <a href="https://www.hri.res.in/"
+                       target="_blank" rel="noopener noreferrer">
+                        Visit HRI ↗
+                    </a>
+                </article>
+
+                <article class="reference-card">
+                    <span class="reference-icon">📚</span>
+                    <h3>MacTutor History of Mathematics</h3>
+                    <p>
+                        Read a mathematical biography and learn more
+                        about his life and contributions.
+                    </p>
+                    <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Harish-Chandra/"
+                       target="_blank" rel="noopener noreferrer">
+                        Read Biography ↗
+                    </a>
+                </article>
+            </div>
+
+            <p class="reference-note">
+                Educational project. Dates and historical details should
+                be checked against authoritative biographical sources
+                before formal academic submission.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>Know Dr. Harish-Chandra</p>
+        <p>School of Basic Sciences · CSJMU, Kanpur</p>
+        <p class="footer-small">
+            Created for educational and informational purposes.
+        </p>
+        <a href="#home" class="back-to-top">↑ Back to Top</a>
+    </footer>
+
+</body>
+</html>
