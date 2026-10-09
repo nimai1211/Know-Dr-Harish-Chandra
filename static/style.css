@@ -2567,3 +2567,16 @@ body:not(.dark-mode) #tribute span {
     color: #222222;
     opacity: 1;
 }
+
+/* Tribute section text visibility fix */
+#tribute.tribute-section,
+#tribute.tribute-section h1,
+#tribute.tribute-section h2,
+#tribute.tribute-section h3,
+#tribute.tribute-section h4,
+#tribute.tribute-section p,
+#tribute.tribute-section span,
+#tribute.tribute-section blockquote {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
