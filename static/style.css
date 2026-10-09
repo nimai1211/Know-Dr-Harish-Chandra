@@ -2536,3 +2536,13 @@ body.dark-mode #quiz h2 {
     top: 3px !important;
     right: 3px !important;
 }
+
+/* Tribute section: improve light-mode readability */
+body:not(.dark-mode) .tribute,
+body:not(.dark-mode) .tribute p,
+body:not(.dark-mode) .tribute h2,
+body:not(.dark-mode) .tribute h3,
+body:not(.dark-mode) .tribute h4 {
+    color: #222222;
+    opacity: 1;
+}
